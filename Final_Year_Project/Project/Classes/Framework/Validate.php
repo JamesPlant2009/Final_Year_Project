@@ -3,16 +3,7 @@
 namespace Framework;
 /**
  * Validate.php
- *
- * @author Original author: CF Ingrams - cfi@dmu.ac.uk
- * @author Rob Singleton - rob.singleton@protonmail.com
- * @author Harry Savill - P2724513@dmu.ac.uk
- * @author Jakub Pietrzak - P2713508@my365.dmu.ac.uk
- * @author Harvey Shaw - ?@email.com
- * @author James Plant - ?@email.com
- * @copyright De Montfort University
- *
- * @package cryptoshow
+
  */
 class Validate
 {
@@ -37,27 +28,13 @@ class Validate
         $route_exists = false;
         $routes = [
             'index',
-            'view_events',
-            'create_event',
-            'create_event_submit',
-            'manage_events',
-            'manage_members',
-            'member_profile',
-            'event_signup',
-            'form-submit-eventsignup-submit',
-            'register',
-            'register-submit',
             'login',
             'login-submit',
-            'device_list_view',
-            'Submit_add_device',
-            'Submit_remove_device',
-            'submit_change_name',
-            'delete_event',
-            'logout',
-            'edit-profile',
-            'edit-profile-submit',
-            'view-members-list'
+            'matrix_add',
+            'matrix_edit',
+            'matrix_list',
+            'training_edit',
+            'training_list'
         ];
 
         if (in_array($route, $routes)) {

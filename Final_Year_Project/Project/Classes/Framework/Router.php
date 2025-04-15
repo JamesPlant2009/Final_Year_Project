@@ -1,7 +1,7 @@
 <?php
 
 namespace Framework;
-use Factory;
+use Framework\Factory;
 
 /**
  * Router.php
@@ -81,72 +81,26 @@ class Router
     public function selectController($selected_route)
     {
         switch ($selected_route) {
-            case 'view_events':
-                $controller = Factory::buildObject('ViewEventsController');
-                break;
-            case 'create_event_submit':
-                $controller = Factory::buildObject('EventCreatedController');
-                break;
-            case 'create_event':
-                $controller = Factory::buildObject('CreateEventController');
-                break;
-            case 'manage_events':
-                $controller = Factory::buildObject('ManageEventsController');
-                break;
-            case 'delete_event':
-                $controller = Factory::buildObject('EventDeletedController');
-                break;
-            case 'manage_members':
-                $controller = Factory::buildObject('ManageMembersController');
-                break;
-            case 'member_profile':
-                $controller = Factory::buildObject('MemberProfileController');
-                break;
-            case 'event_signup':
-                $controller = Factory::buildObject('EventSignupController');
-                break;
-            case 'form-submit-eventsignup-submit':
-                $controller = Factory::buildObject('EventSignupCompleteController');
-                break;
-            case 'register':
-                $controller = Factory::buildObject('RegisterController');
-                break;
-            case 'register-submit':
-                $controller = Factory::buildObject('RegisterSubmitController');
-                break;
             case 'login':
                 $controller = Factory::buildObject('LoginController');
                 break;
             case 'login-submit':
                 $controller = Factory::buildObject('LoginSubmitController');
                 break;
-            case 'device_list_view':
-                $controller = Factory::buildObject('DeviceListViewController');
+            case 'matrix_add':
+                $controller = Factory::buildObject('MatrixAddController');
                 break;
-            case 'Submit_add_device':
-                $controller = Factory::buildObject('DeviceAddedController');
+            case 'matrix_edit':
+                $controller = Factory::buildObject('MatrixEditController');
                 break;
-            case 'Submit_remove_device':
-                $controller = Factory::buildObject('DeviceRemoveController');
+            case 'Matrix_list':
+                $controller = Factory::buildObject('MatrixListController');
                 break;
-            case 'logout':
-                $controller = Factory::buildObject('LogoutController');
+            case 'training_edit':
+                $controller = Factory::buildObject('TrainingEditController');
                 break;
-            case 'submit_change_name':
-                $controller = Factory::buildObject('DeviceEditController');
-                break;
-            case 'edit-profile':
-                $controller = Factory::buildObject('EditProfileController');
-                break;
-            case 'edit-profile-submit':
-                $controller = Factory::buildObject('EditProfileSubmitController');
-                break;
-            case 'view-members-list':
-                $controller = Factory::buildObject('ViewMembersListController');
-                break;
-            case 'index':
-            default:
-                $controller = Factory::buildObject('ViewEventsController');
+            case 'training_list':
+                $controller = Factory::buildObject('TrainingListController');
                 break;
         }
 

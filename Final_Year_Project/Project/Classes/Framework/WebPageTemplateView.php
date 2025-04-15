@@ -3,10 +3,6 @@
 namespace Framework;
 /**
  * WebPageTemplateView.php
- *
- * @author Harry Savill - P2724513@dmu.ac.uk
- * @author Rob Singleton - rob.singleton@protonmail.com
- * @package cryptoshow
  */
 class WebPageTemplateView
 {
@@ -56,23 +52,11 @@ HTML;
         $this->html_page_output .= $html_output;
     }
 
-    /** either provides an empty string - indicating not logged in
-     * or a string consisting of the user's nickname,
-     * then adds it to the end of the section that says CryptoShow, top right.
-     * @return string
-     */
-    private function checkLoggedInTitle(): string
-    {
-        if (isset($_SESSION['username']) && isset($_SESSION['loggedin'])) {
-            return " - {$_SESSION['username']}";
-        } else {
-            return "";
-        }
-    }
+
 
     /** either provides an empty string - indicating not logged in
      * or a string consisting of the user's nickname,
-     * then adds it to the end of the section that says CryptoShow, top right.
+     * then adds it to top right.
      * @return string
      */
     private function checkLoggedInSections(): string
@@ -86,17 +70,14 @@ HTML;
                     <li class="dropdown">
                         <button class="dropdown-button">Admin Tools <i class="fas fa-chevron-down"></i></button>
                         <div class="dropdown-content">
-                            <button  name="route" value="create_event">Create Event</button>
-                            <button  name="route" value="manage_events">Manage Events</button>
-                            <button  name="route" value='view-members-list'>Manage Members</button>
+                            <button  name="route" value="matrix_add">Add Matrix</button>
+                            <button  name="route" value="matrix_edit">Matrix Edit</button>
+                            <button  name="route" value='training_edit'>Training Edit</button>
                         </div>
                     </li>
 HTML;
             } else {
                 return <<< HTML
-                    <button name="route" value="member_profile">My Profile</button>
-                    <li class="main-link"><button name="route" value="device_list_view">Devices</button></li>
-                    <button name="route" value="logout">Log Out</button>
 HTML;
             }
         } else {
@@ -126,7 +107,7 @@ HTML;
         <form class="high-width" action="$address" method="post">
             <nav>
                 <ul>
-                    <li class="main-link"><button name="route" value="view_events">View Events</button></li>
+                    <li class="main-link"><button name="route" value="Matrix_list">Matrix List</button></li>
                     $logged_in_btns
                 </ul>
             </nav>
@@ -136,7 +117,7 @@ HTML;
     <div class="burger-menu-display">
         <ul>
             <form class="low-width" action="$address" method="post">
-                <li class="main-link"><button name="route" value="view_events">View Events</button></li>
+                <li class="main-link"><button name="route" value="matrix_list">Matrix_list</button></li>
                 $logged_in_btns 
             </form>              
         </ul>

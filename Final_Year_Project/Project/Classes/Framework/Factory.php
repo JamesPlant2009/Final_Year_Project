@@ -4,11 +4,6 @@ namespace Framework;
 /**
  * Factory.php
  * PHP web application to demonstrate how databases are accessed securely
- *
- * @author CF Ingrams - cfi@dmu.ac.uk
- * @copyright De Montfort University
- *
- * @package cryptoshow
  */
 class Factory
 {

@@ -2,12 +2,6 @@
 
 namespace Framework;
 /**
- * ProcessOutput.php
- *
- * @author CF Ingrams - cfi@dmu.ac.uk
- * @copyright De Montfort University
- *
- * @package petshow
  */
 class ProcessOutput
 {
@@ -55,8 +49,6 @@ class ProcessOutput
     }
 
     /**
-     * Use a compression algorithm to reduce size, and therefore reduce transit latency
-     *
      * @param $minified_output
      * @return string
      */

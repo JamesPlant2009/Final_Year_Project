@@ -16,10 +16,10 @@ $app_root_path = dirname($_SERVER['PHP_SELF'], 1) . URLSEP;
 $document_root = $_SERVER['HTTP_HOST'];
 $app_root_path = 'http://' . $document_root . $app_root_path;
 
-$application_name = 'CryptoShow';
+$application_name = 'Project';
 $media_path = $app_root_path . 'media' . URLSEP;
 $css_path = $app_root_path . URLSEP . 'css' . URLSEP;
-$css_file_name = 'cryptoshow.css';
+$css_file_name = 'Style.css';
 
 define ('CLASS_PATH', $class_file_path);
 define ('APP_ROOT_PATH', $app_root_path);

@@ -3,14 +3,7 @@
 namespace Framework;
 /**
  * DatabaseWrapper.php
- *
- * Portions of code removed due to going unused
- * in CryptoShow.
- *
- * @author CF Ingrams - cfi@dmu.ac.uk
- * @copyright De Montfort University
- *
- * @package cryptoshow
+
  */
 class DatabaseWrapper
 {
