@@ -62,24 +62,25 @@ class TrainingHomeView extends WebPageTemplateView
         <button class="training-home-button" name="route" value="enviroment">Environmental Awareness</button>
         </form>
         
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Fire Marshal Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Fire Safety Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Hand Pallet Truck Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Legionella Awareness</button>
+        <form method="post" action="">
+        <button class="training-home-button" name="route" value="fm">Fire Marshal Awareness</button>
+        </form>
+        
+        
+        <form method="post" action="">
+        <button class="training-home-button" name="route" value="hp">Hand Pallet Truck Awareness</button>
+        </form>
+        
+        <form method="post" action="">
+        <button class="training-home-button" name="route" value="legionella">Legionella Awareness</button>
+        </form>
+        
         <br><br>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Manual Handling Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Mental Health Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Noise Control Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Permit to Work Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>PPE Awareness</button>
-        <br><br>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Quality System Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Security Control Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Spill Control Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Stress Awareness</button>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>Vibration Awareness</button>
-        <br><br>
-        <button class="training-home-button" type="button" value="button"><a href="#"></a>W@H Awareness</button>
+        
+        <form method="post" action="">
+        <button class="training-home-button" name="route" value="mh">Manual Handling Awareness</button>
+        </form>
+        
     </div>
 HTMLFORM;
     }

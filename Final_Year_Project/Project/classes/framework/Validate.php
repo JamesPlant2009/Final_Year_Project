@@ -35,6 +35,14 @@ class Validate
             'electric_answer',
             'enviroment',
             'enviroment_answer',
+            'fm_answer',
+            'fm',
+            'hp_answer',
+            'hp',
+            'legionella_answer',
+            'legionella',
+            'mh_answer',
+            'mh',
             'asbestos_answer'
         ];
 

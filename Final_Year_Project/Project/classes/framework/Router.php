@@ -72,6 +72,23 @@ class Router
             case 'enviroment':
                 $controller = Factory::buildObject('EnviromentController');
                 break;
+            case 'fm_answer':
+            case 'fm':
+                $controller = Factory::buildObject('FMController');
+                break;
+
+            case 'mh_answer':
+            case 'mh':
+                $controller = Factory::buildObject('MHController');
+                break;
+            case 'legionella_answer':
+            case 'legionella':
+                $controller = Factory::buildObject('LegionellaController');
+                break;
+            case 'hp_answer':
+            case 'hp':
+                $controller = Factory::buildObject('HPController');
+                break;
             case 'control_answer':
             case 'control':
                 $controller = Factory::buildObject('ControlController');
